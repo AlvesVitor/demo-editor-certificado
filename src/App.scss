@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+body {
+  width: 100%;
+  background-color: #c0c0c0;
+
+}
+.App {
+  display: flex;
+}
+
+.iframe-pdf {
+  width: 100%;
+  height: 100vh;
+  border: 0;
+}
+
+.box-options {
+  height: 100vh;
+  width: 25%;
+  overflow-y: scroll;
+  background-color: white;
+}
+.session{
+  padding: 30px 5px 0px 10px;
+  display: block;
+}
+.row{
+  margin: 10px 0px 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.containerCertificado{
+  flex: 1;
+  background-color: #525659;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+}
+
+.certificado{
+  width: 877px;
+  height: 620px;
+  background-color: #fff;
+
+  p {
+    font-size: 40px;
+  }
+
+  ul {
+    height: 100%;
+
+    .certificado-topo {
+      height: 15%;
+    }
+    .certificado-conteudo {
+      height: 70%;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+      .containerAssignatures {
+        display: flex;
+        width: '100%';
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
+    }
+    .certificado-footer {
+      height: 15%;
+    }
+    .certificado-verso{
+      height: 100%;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1250px) {
+  .certificado{
+    transform: scale(0.5);
+  }  
+}
+
+@media only screen and (max-width: 750px) {
+  .certificado{
+    width: 350px;
+    height: 248px;
+  }  
+}
+
+.label-input {
+  display: block;
+  background-color: white;
+  border: 1px solid #898989;
+  position: relative;
+  margin-top: 15px;
+  width: 100%;
+  border-radius: 3px;
+
+
+  textarea {
+    resize: none;
+    height: 70px;
+  }
+
+  label {
+    position: absolute;
+    top: -10px;
+    background-color: white;
+    font-size: 13px;
+    color: #222222;
+  }
+
+  .input {
+    border: none;
+    background: transparent;
+    padding: 3px 5px;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+ 
+}
+
+.tab{
+  margin-top: 15px;
+  width: 70%;
+  border-radius: 3px;
+  align-items: center;
+  
+
+  .tabLinks{
+    background-color: #004A6E;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: 0.3s;
+    font-size: 12px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border-color: #036ea3;
+  }
+}
+.gerarPdf{
+  position: absolute;
+  margin: 10px;
+  bottom: 0;
+  left: 1;
+}
+
+.btn {
+  margin-top: 15px;
+  position: relative;
+  display: flex;
+
+  .box-img {
+    width: 60%;
+    height: 75px;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+
+    img {
+      height: 60px;
+      max-width: 100%;
+      margin: auto;
+    }
+  }
+  button{
+    position: absolute;
+    bottom: 1;
+    left: 0;
+    img{
+      width: 20px !important;
+     
+    }
+  }
+
+  .input-img {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    height: 75px;
+    width: 60%;
+  }
+  
+  .input-color {
+    width: 40%;
+    height: 75px;
+    border: none;
+  }
+
+}
+
+.btn-assinatura {
+  background-color: transparent;
+  color: #004A6E;
+  border: 1px solid #004A6E;
+  border-radius: 4px;
+  padding: 4px 7px;
+  transition: 0.2s ease-in;
+
+  &:hover {
+    transition: 0.2s ease-in;
+    color: white;
+    background-color: #004A6E;
+    cursor: pointer;
+  }
+}
+
+.btn-remove {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: -10px;
+  right: -5px;
+
+  img {
+    width: 20px;
+  }
+}
+
+.select-option-hiden {
+  option {
+    &:first-child {
+      display: none !important;
+    }
+  }
+}

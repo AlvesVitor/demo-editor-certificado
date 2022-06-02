@@ -1,0 +1,10 @@
+.contentCardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 50px;
+
+    p{
+        margin-bottom: 20px;
+    }
+}

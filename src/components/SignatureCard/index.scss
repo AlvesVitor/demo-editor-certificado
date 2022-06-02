@@ -1,0 +1,32 @@
+.signatureCardContainer{
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 50px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.signatureCardContainerImg{
+    display: flex;
+    width: 120px;
+    height: 50px;
+    justify-content: center;
+    img{
+        width: auto;
+        height: 50px;
+    }
+}
+
+
+.signatureCardContainerLabel{
+    width: 100%;
+    align-items: center;
+    border-top: 0.5px solid #657176;
+    p{
+        font-size: 10px;
+        text-align: center;
+        color: #657176
+      
+    }
+}
